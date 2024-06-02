@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas PortFolio</title>
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+       
+        
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+       
+        </style>
+    
+</head>
+<body>
+    <div class="load"></div>
+    <div class="nav">
+        <div class="logo">
+            <div class="text">Anas paracha</div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>About</li>
+            <li>Services</li>
+            <li><a href="#Experties">Experiences</a> </li>
+            <button><a href="#contactbox">Contact</a></button>
+
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="container" >
+        <div class="profinfo">
+            <pre>
+            <div class="textarea">            
+ Hi, I'm <span id="bold"></span>Anas Paracha</span> and I'm
+ A <span id="element"></span>
+                  </div></pre>
+            <div class="textarea2">
+                <p>A boy who is currently doing bachelor of software Enginnering from Sir Syed University of Engineering And Technology wants to be succeeded as a expert Developer</p>
+<br>
+                Find me on
+                <br>
+                
+                <img id='img1' src="fb3.jpg" alt="" width="20px">
+                <img id='img2' src="inst2.jpg" alt="" width="20px">
+                <img id='img3' src="lin.png" alt="" width="20px">
+            </div>
+<section>
+    
+    <button id="resume1" >click to see Resume</button>
+    <button id="Sign" >Sign Up for projects</button>
+</section>
+
+   
+    
+
+           
+            
+        </div>
+        <div class="profpic">
+            <div class="smallcircle"></div>
+            <div class="midcircle">
+            </div>
+<div class="largecircle">
+<img src="mypicture.jpeg" alt="">
+</div>
+        </div>
+    </div>
+   <br>
+   <br>
+   <br>
+    <hr>
+    <br>
+    <div class="Expert" id="Experties">
+    <h1>
+        Have a Look At My Work Experiences
+    </h1>
+<br>
+<br>
+<div class="imgbox">
+    <img src="Screenshot (279).png" alt="" width="600px" height="180px">
+</div>
+</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="box" id="contactbox">
+        <h2>CONTACT</h2>
+        <br><br>
+
+        <b>Name</b>
+        <input type="text" placeholder="first Name" id="name1">
+        <input type="text" placeholder="Last Name" id="name2">
+        <br>
+        
+        
+
+        <b>Phone Number</b>
+        <input type="text" placeholder="+92xxxxxxx" id="phone">
+
+        <br>
+        
+        
+
+        <b>Email</b>
+        <input type="text"placeholder="xxx@gmail.com" id="email">
+        <br>
+        <b>Comment or Message</b>
+        <textarea name="comment" id="message" placeholder="Write somthing?"></textarea>
+        <button id="submit"> Submit</button>
+        <button id="contact2"> Contact</button>
+    </div>
+   <br>
+   <br><br>
+   <hr>
+    <div class="footbar">
+       <br>
+       <br>
+       <div class="h33"><h3>
+           <u>My Home Address</u>
+       </h3>
+       
+       <h3>A-536 Block I North Nazimabad karachi </h3></div>
+       <span class="email">
+        Email: <a href="https://mail.google.com/mail/u/0/#all?compose=new"><u>Amiranas761@gmail.com</u></a> 
+       </span>
+       <span class="contact">
+           Contact : <u>03212167055</u></span>
+      <footer>
+           <p>copyright &copy; Made by <b>Anas paracha</b></p>
+           <p>Software Engineer  <b>Anas paracha</b></p>
+       </footer>
+           
+       
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [' Responsive Web designer', 'Front-End Developer','Back-End Developer','React Developer','Node js developer','MS word Expert','MS Excel Expert','MS PowerPoint Expert'],
+          typeSpeed: 50,
+        });
+      </script>
+      <script>
+        async function wait(){
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    window.location.replace(
+  "http://127.0.0.1:5500/index1.html",
+);
+resolve()
+                }, 500);
+              
+            })
+        }
+      
+        let Sign=document.getElementById('Sign')
+        Sign.addEventListener('click',async function waiting(){
+            let a=await wait();
+            
+           
+        }
+        
+    )
+    let img1=document.querySelector('#img1');
+    let img2=document.querySelector('#img2');
+    let img3=document.querySelector('#img3');
+
+    img1.addEventListener('click',()=>{
+        location.href=('https://www.facebook.com/anas.amir.7311352/');
+    })
+    img2.addEventListener('click',()=>{
+        location.href=('https://www.instagram.com/anasparacha223/')
+    })
+    img3.addEventListener('click',()=>{
+        location.href=('https://www.linkedin.com/in/anas-amir-874876265/')
+    })
+    let str="";
+    let name1=document.querySelector('#name1');
+    let name2=document.querySelector('#name2');
+    let phone=document.querySelector('#phone');
+    let email=document.querySelector('#email')
+    let msg=document.querySelector('#message');
+    let submit=document.querySelector('#submit');
+    submit.addEventListener('click',()=>{
+        if(name1.value==str || name2.value==str || phone.value==str || email.value==str){
+            alert('Please Fill all the Fields!!')
+        }
+        else if(msg.value==str){
+            alert('please write something in message box.')
+        }
+        else if(phone.value.length<11){
+            alert('invalid Phone Number!!\n (Should be 11 digits long)')
+        }
+        else{
+            let ques=confirm('Are you sure you want to submit the form? \n(Ok for yes/Cancel for No) ');
+            if(!(ques)){
+                let ques2=confirm('Form not Submitted!!\ndo you want to Exit(ok for Yes/ Cancel for No)');
+                if(ques2){
+                    alert('Submit Unsuccessful')
+                }
+                
+            }
+            else{
+                alert('Form Successfully Submitted!!')
+            }
+        
+        }
+    })
+    let contact2=document.querySelector('#contact2').addEventListener('click',()=>{
+        location.href=('https://wa.me/qr/KEG6IL63PTFUF1');
+    })
+      </script>
+</body>
+</html>

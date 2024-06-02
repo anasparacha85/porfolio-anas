@@ -1,0 +1,340 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav .logo{
+   
+    height: 50px;
+    width:50px;
+    background: rgb(229, 23, 23);
+    margin-left:15px ;
+    margin-top: 15px;
+    color: white;
+    border-radius: 100%;
+    box-shadow: 7px 4px 4px rgb(154, 44, 44);
+
+}
+.nav .logo .text{
+    width: 150px;
+    height: 50px;
+
+    margin-top: 10px;
+ 
+ padding-left: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Radio Canada Big", sans-serif;
+
+}
+.nav ul{
+   
+    font-size: 12px;
+   
+   
+}
+.nav ul li{
+display: inline;
+color: white;
+margin: 30px;
+font-family: "Radio Canada Big", sans-serif;
+font-size: 14px;
+
+
+font-weight:bold;
+cursor: pointer;
+}
+.nav ul button{
+    background: red;
+    color: white;
+    padding: 5px 15px;
+    margin: 30px;
+    font-family: "Radio Canada Big", sans-serif;
+
+font-weight:bold;
+border-radius: 20%;
+cursor: pointer;
+    
+}
+.nav ul button a{
+    text-decoration: none;
+    color: white;
+}
+.nav ul li:hover{
+    background: red;
+padding: 8px 12px;
+border-radius: 5%;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+.container{
+    height: 470px;
+    width: 98vw;
+  
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .profinfo{
+    width: 47vw;
+    height: 100vh;
+   
+    
+}
+.profinfo .textarea{
+   
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+.profinfo .textarea #bold{
+  
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+
+}
+.container .profpic{
+    width: 47vw;
+    height: 100vh;
+    
+
+}
+.textarea #element{
+    font-family:  "Radio Canada Big", sans-serif;
+    font-size: 37px;
+    color: rgb(170, 31, 31);
+}
+.profinfo .textarea2{
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    padding-left: 42px;
+    
+}
+img{
+    display: inline-block;
+    margin: 10px;
+}
+.textarea2 img:hover{
+    mix-blend-mode: hard-light;
+}
+ .profinfo section{
+    padding-left:30px ;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+section button{
+    background: red;
+    color: white;
+    padding: 5px 15px;
+    margin: 20px 20px 35px 20px;
+    font-family: "Radio Canada Big", sans-serif;
+    border-radius: 15%;
+    cursor: pointer;
+    display :inline-block;
+
+}
+.smallcircle{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: rgb(107, 39, 39);
+    margin-left: 240px;
+    margin-top: -4px;
+}
+.midcircle{
+    height: 130px;
+    width: 130px;
+    border-radius: 90%;
+    background:rgb(169, 14, 14);
+    margin-left: 300px;
+
+}
+.largecircle{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background: red;
+    margin-left: 80px;   
+    margin-top:-80px;
+
+}
+.largecircle img{
+    width: 320px;
+    height:360px;
+    border: none;
+   border-radius: 40%;
+    margin-top: 50px;
+    margin-right: 60px;
+    mix-blend-mode:multiply;
+   
+ 
+}
+.Expert h1{
+    color: rgb(203, 12, 12);
+  
+    background: rgb(96, 96, 96);
+    text-align: center;
+}
+.imgbox{
+    width: 100vw;
+    height: 200px;
+
+}
+.imgbox img{
+height: 200px;
+margin-left: 150px;
+margin-top: 10px;
+
+}
+
+
+
+.box{
+    background-image: url(redish.jpg);
+  backdrop-filter:blur(150px);
+    height:470px;
+    width: 340px;
+   
+    margin-left: 300px;
+    padding-top: 10px;
+    
+    
+}
+.box h2{
+    text-align: center;
+  font-family:  Arial, Helvetica, sans-serif;
+   
+    color:rgb(182, 168, 168);
+}
+.box b{
+    display: block;
+    color:rgb(176, 173, 173);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.box #name1,#name2{
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    margin:0px 10px 6px 3px;
+    background: transparent;
+    backdrop-filter: blur(4px);
+
+}
+.box input{
+    color: white;
+}
+.box input::placeholder {
+    color: rgb(186, 180, 180);
+}
+.box #phone,#email{
+    display: block;
+    height: 30px;
+    width: 325px;
+    margin-left:6px;
+    background: transparent;
+    backdrop-filter: blur(4px);
+}
+.box textarea{
+    display: block;
+    width: 325px;
+    height: 120px;
+    margin-left:6px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+}
+.box textarea::placeholder {
+    color: rgb(165, 160, 160);
+}
+.box button{
+    display: block;
+    display: block;
+    height: 30px;
+    width: 325px;
+    margin-left:6px;
+    margin-top: 6px;
+    background: transparent;
+    backdrop-filter: blur(25px);
+   
+    color:rgb(186, 180, 180); 
+
+}
+.h11{
+height: 10vh;
+width: 100vw;
+}
+.h11 h1{
+text-align:center;
+text-transform: uppercase;
+color: grey
+}
+.footbar{
+height: 50vh;
+width: 100vw;
+background-color: black
+
+
+
+}
+.h33{
+height: 90px;
+
+text-align: center;
+color: whitesmoke;
+}
+.email{
+color: white;
+font-weight: bold;
+float: left;
+padding-right: 32px;
+}
+.contact{
+color: white;
+font-weight: bold;
+float: right;
+
+padding-right: 42px;
+
+}
+footer{
+background-color: rgb(158, 20, 8);
+height: 60px;
+width: 100vw;
+color: white;
+margin-top: 50px;
+
+
+
+}
+footer p{
+text-align: center;
+}
+.footbar a{
+color: white;
+}
+.load{
+color: brown;
+height: 1.5px;
+}
+
+
+
+
